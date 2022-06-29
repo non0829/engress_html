@@ -1,6 +1,10 @@
 header {
     height: 80px;
-    border-bottom: 1px solid black; // 後で消す
+    position: fixed;
+    @include z-index(header);
+    top: 0;
+    width: 100%;
+    @include backColor(white_color_1)
 }
 
 .header_left_nav {
@@ -22,6 +26,7 @@ header {
         }
         .header_tel {
             justify-content: right;
+            flex-wrap: nowrap;
             img {
                 width: 11px;
                 height: 16px;

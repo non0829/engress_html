@@ -2,7 +2,13 @@
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     @include color(navy_color);
+}
+
+body {
+    position: relative;
+    padding-top: 80px;
 }
 
 h1 {
@@ -11,6 +17,10 @@ h1 {
 
 h2 {
     font-size: 36px;
+}
+
+h3 {
+    font-size: 26px;
 }
 
 li {
@@ -32,6 +42,12 @@ button:hover {
 
 .flex {
     @include flex;
+}
+
+.wrapper {
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 // @media screen and (max-width: 1200px) {
