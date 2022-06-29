@@ -1,0 +1,55 @@
+header {
+    height: 80px;
+    border-bottom: 1px solid black; // 後で消す
+}
+
+.header_left_nav {
+    padding: 27px 0px 0px 15px;
+    li {
+        margin-right: 27px;
+        font-weight: bold;
+    }
+}
+
+.header_right_nav {
+    padding: 15px 10px 0px 0px;
+    .header_info {
+        width: 140px;
+        text-align: right;
+        margin: 12px 23px 0px 0px;
+        p {
+            font-size: 12px;
+        }
+        .header_tel {
+            justify-content: right;
+            img {
+                width: 11px;
+                height: 16px;
+                margin: 6px 5px 0px 0px;
+            }
+            p {
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+    .header_btn {
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        a {
+            font-weight: bold;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        &:nth-child(2) {
+            width: 142px;
+            @include backColor(orange_color);
+            margin-right: 10px;
+        }
+        &:last-child {
+            width: 137px;
+            @include backColor(navy_color);
+        }
+    }
+}
