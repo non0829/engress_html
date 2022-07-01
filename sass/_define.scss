@@ -8,6 +8,7 @@ $color : (
     gray_color_2: #C3C3C3,
     gray_color_3: #F8F8F8,
     orange_color: #F5A623,
+    back_color: rgba(161, 161, 161, 0.5),
 );
 
 // 色を返す
@@ -22,6 +23,9 @@ $color : (
 // 基本的なz-indexの値管理
 $z-index : (
     header: 100,
+    hamburger: 70,
+    global-menu: 50,
+    back_color: 1,
     image: -1,
 );
 
