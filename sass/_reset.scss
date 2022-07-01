@@ -44,6 +44,17 @@ button:hover {
     @include flex;
 }
 
+.button {
+    display: inline-block;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .wrapper {
     width: 95%;
     max-width: 900px;
