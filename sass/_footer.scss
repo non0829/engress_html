@@ -74,6 +74,10 @@
                 border: 1px solid #FFFFFF;
                 margin: 0 21.5px;
             }
+            a {
+                @include color(white_color_1);
+                text-decoration: none;
+            }
         }
     }
 }
@@ -86,7 +90,7 @@
         margin: 35px 0px 27px;
         img {
             padding: 14px 19px;
-            width: 159px;
+            width: 159px + 19px + 19px;
             height: auto;
         }
     }
@@ -118,5 +122,8 @@
         width: 73%;
         text-align: right;
         padding-top: 12px;
+    }
+    p {
+        font-size: 12px;
     }
 }

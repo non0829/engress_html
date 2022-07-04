@@ -12,6 +12,10 @@ header {
     li {
         margin-right: 27px;
         font-weight: bold;
+        a {
+            @include color(navy_color);
+            text-decoration: none;
+        }
     }
     @media screen and (max-width: 640px) {
         li {
@@ -36,8 +40,8 @@ header {
             justify-content: right;
             flex-wrap: nowrap;
             img {
-                width: 11px;
-                height: 16px;
+                width: 10px;
+                height: 14px;
                 margin: 6px 5px 0px 0px;
             }
             p {
@@ -190,6 +194,9 @@ header {
         li {
             @include color(white_color_1);
             margin-top: 15px;
+            a {
+                text-decoration: none;
+            }
         }
         .sp-global-menu_info {
             margin-top: 30px;
